@@ -39,9 +39,14 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <body>
+        <body
+          style={{
+            margin: "0",
+            padding: "0",
+            boxSizing: "border-box",
+            fontFamily: '"Poppins", sans-serif',
+          }}
+        >
           <Main />
           <NextScript />
         </body>
